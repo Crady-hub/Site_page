@@ -1,0 +1,555 @@
+@import 'normalize.scss';
+
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.section{
+    background: url(img/content-bg01.jpg) no-repeat 80% 20%;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        margin-left: 175px;
+        margin-right: 175px;
+
+        &-menus{
+            display: flex;
+            margin-top: 10px;
+
+            &-menu{
+                margin-right: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                border-bottom: 2px solid rgba(255, 78, 91, 0);
+                cursor: pointer ;
+            }
+
+            &-menu:hover{
+                color: #ff4e5b;
+                border-bottom: 2px solid rgba(255, 78, 91, 1);         
+            }
+        }
+
+        &-second{
+            display: flex;
+            flex-basis: 100%;
+            margin-top: 100px;
+            justify-content: space-between;
+            &-logo{
+                height: 70px;
+                width: 186px;
+                background: url( img/logo.png) no-repeat;
+                background-size: cover;
+            }
+
+            &-counter{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-right: 100px;
+                &-count{
+                    font-weight: bold;
+                    font-size: 30px;
+                }
+                &-text{
+                    font-size: 16px;
+                    vertical-align: baseline;
+                }
+            }
+
+            &-apps{
+                display: flex;
+                &-google{
+                    height: 54px;
+                    width: 182px;
+                    background: url(img/google_play.png) no-repeat;
+                    background-size: cover;
+                }
+
+                &-apple{
+                    margin-left: 20px;
+                    height: 54px;
+                    width: 182px;
+                    background: url(img/app_store.png) no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+
+        &-wrapper{
+            position: relative;
+            margin-top: 100px;
+            height: 550px;
+            width: 100%;
+
+            &-text{
+                position: absolute;
+                z-index: 2;
+                font-size: 60px;
+                font-weight: bold;
+            }
+            &-button{
+                position: absolute;
+                bottom: 40%;
+                a.button{
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 30px;
+                    padding: 20px 50px;
+                    background-color: #ff4e5b;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 18px;
+                }
+            }
+            &-img{
+                position: absolute;
+                z-index: 1;
+                right: 0;
+                background: url('img/home-img01.jpg') no-repeat;
+                background-size: cover;
+                height: 500px;
+                width: 870px;
+            }
+        }
+    }
+}
+
+
+.section-1{
+    margin-top: 140px;
+    height: 600px;
+    color: rgb(0, 0, 0);
+    margin-right: 175px;
+    margin-left: 175px;
+    
+    .block-1{
+        position: relative;
+        height: 720px;
+        width: 100%;
+        &-img{
+            position: absolute;
+            background: url(img/home-img02.jpg) no-repeat;
+            background-size: cover;
+            height: 707px;
+            width: 570px;
+        }
+        &-welcome{
+            position: absolute;
+            right: 30%;
+            font-weight: bold;
+            font-size: 36px;
+            vertical-align: baseline;
+        }
+        &-text{
+            position: absolute;
+            top: 14%;
+            left: 56%;
+            right: 4%;
+            font-size: 18px;
+            
+        }
+        &-promo{
+            position: absolute;
+            top: 35%;
+            left: 40%;
+            font-weight: bold;
+            font-size: 60px;
+        }
+        &-button{
+            position: absolute;
+            right: 27%;
+            bottom: 20%;
+            a.button{
+                text-decoration: none;
+                color: white;
+                border-radius: 30px;
+                padding: 20px 50px;
+                background-color: #ff4e5b;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.section-2{
+    background-color: rgb(247, 247, 247);
+    height: 560px;
+
+    .block-2{
+        margin-top: 25px;
+        margin-right: 175px;
+        margin-left: 175px;
+        padding-top: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-title{
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        &-wrapper{
+            display: flex;
+            justify-content: space-between;
+            &-people1{
+                background: url(img/team-img01.jpg) no-repeat;
+                background-size: cover;
+                height: 170px;
+                width: 170px;
+            }
+            &-people2{
+                background: url(img/team-img02.jpg) no-repeat;
+                background-size: cover;
+                height: 170px;
+                width: 170px;
+            }
+            &-people3{
+                background: url(img/team-img03.jpg) no-repeat;
+                background-size: cover;
+                height: 170px;
+                width: 170px;
+            }
+            &-people4{
+                background: url(img/team-img04.jpg) no-repeat;
+                background-size: cover;
+                height: 170px;
+                width: 170px;
+            }
+            &-people5{
+                background: url(img/team-img05.jpg) no-repeat;
+                background-size: cover;
+                height: 170px;
+                width: 170px;
+            }
+        }
+        &-names{
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            &-n{
+                width: 170px;
+                color: #ff4e5b;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+
+        &-info{
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            
+            &-n{
+                width: 170px;
+                font-size: 14px;
+                color:#b6b6b6;
+            }
+        }
+    }
+}
+
+.section-3{
+    background: url(img/content-bg02.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    .block-3{
+        position: relative;
+        color: #fff;
+        margin-right: 175px;
+        margin-left: 175px;
+        height: 600px;
+        width: 1200px;
+        &-img{
+            position: absolute;
+            top: 19%;
+            background: url(img/home-img03.jpg) no-repeat;
+            background-size: cover;
+            width: 770px;
+            height: 549px;
+        }
+        &-text{
+            position: absolute;
+            top: 30%;
+            right: 0;
+            font-size: 60px;
+            font-weight: bold;
+            text-align: right;
+        }
+        &-wrapper{
+            position: absolute;
+            top: 75%;
+            right: 1%;
+            a.button{
+                text-decoration: none;
+                color: white;
+                border-radius: 30px;
+                padding: 20px 80px;
+                background-color: #ff4e5b;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 18px;
+            }
+        }
+    }
+}
+.section-4{
+    margin-top: 150px;
+    margin-right: 175px;
+    margin-left: 175px;
+    height: 360px;
+    .block-4{
+        display: flex;
+        flex-direction: column;
+        color: #000000;
+        &-title{
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        &-wrapper-img{
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        
+            &-1{
+                background: url(img/icon01.png) no-repeat;
+                background-size: cover;
+                height: 70px;
+                width: 70px;
+            }
+
+            &-2{
+                background: url(img/icon02.png) no-repeat;
+                background-size: cover;
+                height: 70px;
+                width: 70px;
+            }
+
+            &-3{
+                background: url(img/icon03.png) no-repeat;
+                background-size: cover;
+                height: 70px;
+                width: 70px;
+            }
+
+            &-4{
+                background: url(img/icon04.png) no-repeat;
+                background-size: cover;
+                height: 64px;
+                width: 73px;
+            }
+        }
+
+        &-wrapper-text{
+            display: flex;
+            justify-content: space-around;
+            flex-basis: 70;
+            height: 70;
+            font-size: 18px;
+            text-align: center;
+        }
+
+    }
+}
+
+.section-5{
+    background-color: rgb(247, 247, 247);
+    height: 650px;
+
+    .block-5{
+        margin-top: 25px;
+        margin-right: 175px;
+        margin-left: 175px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-title{
+            margin-top: 25px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        &-face{
+            background: url(img/testi-img03.png) no-repeat;
+            background-size: cover;
+            height: 80px;
+            width: 80px;
+            margin-top: 50px;
+        }
+
+        &-name{
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff4e5b;
+            margin-top: 25px;
+        }
+        &-wrapper{
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+
+            &-icon{
+                background: url(img/testi-icon.png) no-repeat;
+                background-size: cover;
+                height: 34px;
+                width: 40px;
+                margin-right: 40px;
+            }
+
+            &-text{
+                flex-basis: 750px;
+                font-size: 24px;
+                font-style: italic;;
+            }
+        }
+
+        &-container{
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            &-circle{
+                margin-left: 30px;
+                background-color: #ff4e5b;
+                border-radius: 20px;
+                height: 20px;
+                width: 20px;
+            }
+
+            &-gcircle{
+                margin-left: 30px;
+                background-color: #b6b6b6;
+                border-radius: 20px;
+                height: 15px;
+                width: 15px;
+            }
+        }
+    }
+}
+
+.section-6{
+    background: url(img/content-bg03.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    color: #fff;
+    height: 350px;
+    .footer-inner{
+        padding-top: 50px;
+        margin-right: 175px;
+        margin-left: 175px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        &-moto{
+            background: url(img/moto.png) no-repeat;
+            background-size: cover;
+            width: 369px;
+            height: 223px;
+        }
+        &-contact{
+            display: flex;
+            flex-direction: column;
+            &-title{
+                font-size: 24px;
+                font-weight: bold;
+            }
+            
+            &-phone{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &-img{
+                    background: url(img/phone-icon.png) no-repeat;
+                    background-size: cover;
+                    width: 11px;
+                    height: 18px;
+                    margin-right: 15px;
+                }
+                &-phone{
+                    font-size: 18px;
+                }
+            }
+
+            &-mail{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                &-img{
+                    background: url(img/mail-icon.png) no-repeat;
+                    background-size: cover;
+                    width: 22px;
+                    height: 18px;
+                }
+                &-name{
+                    font-size: 18px;
+                    color: #ff4e5b;
+                }
+            }
+
+            &-ad{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &-img{
+                    background: url(img/local-icon.png) no-repeat;
+                    background-size: cover;
+                    width: 11px;
+                    height: 18px;
+                }
+            }
+        }
+
+        &-follow{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            height: 30px;
+            &-title{
+                font-style: 24px;
+                font-weight: bold;
+            }
+
+            &-holder{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 50px;
+                margin-top: 50px;
+                
+                &-1{
+                    background: url(img/soc-icon01.png) no-repeat;
+                    background-size: cover;
+                    height: 25px;
+                    width: 15px;
+                    margin-right: 25px;
+                }
+                &-2{
+                    background: url(img/soc-icon02.png) no-repeat;
+                    background-size: cover;
+                    height: 25px;
+                    width: 25px;
+                    margin-right: 25px;
+                }
+                &-3{
+                    background: url(img/soc-icon03.png) no-repeat;
+                    background-size: cover;
+                    height: 25px;
+                    width: 25px;
+                    margin-right: 25px;
+                }
+                &-4{
+                    background: url(img/soc-icon04.png) no-repeat;
+                    background-size: cover;
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+        }
+    }
+}
